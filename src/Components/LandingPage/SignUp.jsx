@@ -6,34 +6,34 @@ function SignUp() {
   return (
     <div>
       <form>
-      <label for="email">User Name</label>
+      <label htmlFor="email">User Name</label>
         <input
           id="userName"
           type="text"
           value={userName}
           onChange={(event) => setUserName(event.target.value)}
           placeholder="Enter User Name"
-          autocomplete="off"
+          autoComplete="off"
           required
         />
-        <label for="email">Email</label>
+        <label htmlFor="email">Email</label>
         <input
           id="email"
           type="text"
           value={email}
           onChange={(event) => setEmail(event.target.value)}
           placeholder="Enter Email address"
-          autocomplete="off"
+          autoComplete="off"
           required
         />
-        <label for="password">Password</label>
+        <label htmlFor="password">Password</label>
         <input
           id="password"
           type="password"
           value={password}
           onChange={(event) => setPassword(event.target.value)}
           placeholder="Enter your Password"
-          autocomplete="off"
+          autoComplete="off"
           required
         />
         <button type="submit" for="loginForm">

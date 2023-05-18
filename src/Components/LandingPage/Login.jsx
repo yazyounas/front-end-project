@@ -17,24 +17,24 @@ function Login() {
     <div>
       {showLogIn && (
         <form>
-          <label for="email">Email</label>
+          <label htmlFor="email">Email</label>
           <input
             id="email"
             type="text"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
             placeholder="Enter Email address"
-            autocomplete="off"
+            autoComplete="off"
             required
           />
-          <label for="password">Password</label>
+          <label htmlFor="password">Password</label>
           <input
             id="password"
             type="password"
             value={password}
             onChange={(event) => setPassword(event.target.value)}
             placeholder="Enter your Password"
-            autocomplete="off"
+            autoComplete="off"
             required
           />
           <button type="submit" for="loginForm">
