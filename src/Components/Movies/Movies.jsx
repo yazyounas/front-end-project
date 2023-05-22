@@ -4,10 +4,12 @@ import movieData from "./MoviesData.json";
 
 const Movies = () => {
   const [listQuery, setListQuery] = useState("");
+  console.log(listQuery)
 
   const filteredMovies = movieData.filter((movie) => {
     const { title, cast, genre, director } = movie;
     const query = listQuery.toLowerCase();
+    
 
     return (
       title.toLowerCase().includes(query) ||
